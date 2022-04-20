@@ -7,6 +7,7 @@ import BarChart from './BarChart';
 import LineChart from './LineChart';
 import Map from './Map';
 import './index.scss';
+import BoxChart from './BoxChart';
 
 const locations = Object.keys(Vancouver);
 
@@ -79,10 +80,15 @@ const Charts = ({
         </div>
         </div>
       </div>
-      <div className="chart">
-        <LineChart />
+        <div className="chart line-chart">
+          <LineChart />
+        </div>
+        <div style={{display: 'flex', justifyContent: 'center'}}>
+        <div className="chart box-chart">
+          <BoxChart/>
+        </div>
+        </div>
       </div>
-    </div>
   );
 };
 

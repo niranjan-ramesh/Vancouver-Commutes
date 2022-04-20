@@ -30,6 +30,14 @@ const BarChart = ({ seekLocations }) => {
     .range([innerHeight, 0])
     .domain([0, max(data, (d) => d[bedrooms])]);
 
+  const getColor = (i) => {
+    const colors = ['#FF9F0A',
+    '#BF5AF2',
+    '#FF2D55',
+    '#64FFB5'];
+    return colors[i];
+  };
+
   return (
     <div className="bar-chart-container">
       <div className="bar-chart-heading">
@@ -60,8 +68,9 @@ const BarChart = ({ seekLocations }) => {
               </text>
             </g>
           ))}
-          {data.map((d) => (
+          {data.map((d, i) => (
             <rect
+              style={{fill: getColor(i)}}
               key={d.district}
               x={xScale(d.district)}
               y={yScale(d[bedrooms])}

@@ -13,15 +13,14 @@ const margin = {
   top: 40, right: 40, bottom: 60, left: 40,
 };
 
-const getRandomColor = () => {
-  const letters = '0123456789ABCDEF';
-  let color = '#';
-  // eslint-disable-next-line no-plusplus
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
+const getColor = (i) => {
+  const colors = ['#FF9F0A',
+  '#BF5AF2',
+  '#FF2D55',
+  '#64FFB5'];
+  return colors[i];
 };
+
 
 const LineChart = ({ workLocation, seekLocations }) => {
   if (seekLocations.length === 0) return <></>;
@@ -29,12 +28,12 @@ const LineChart = ({ workLocation, seekLocations }) => {
   const [locationColours, setLocationColours] = useState([]);
   useEffect(() => {
     console.log(seekLocations)
-    setLocationColours(seekLocations.map((item) => ({ name: item, color: getRandomColor() })));
+    setLocationColours(seekLocations.map((item, i) => ({ name: item, color: getColor(i) })));
   }, [seekLocations]);
 
-  const width = window.innerWidth - 80;
-  const height = window.innerHeight;
-  // const width = 1100;
+  const width = window.innerWidth;
+  const height = window.innerHeight - 50;
+  // const width = 900;
   // const height = 600;
 
   const innerWidth = width - margin.left - margin.right;
@@ -50,11 +49,14 @@ const LineChart = ({ workLocation, seekLocations }) => {
 
   const yScale = scaleLinear()
     .range([innerHeight, 0])
-    .domain([0, max(randomData, yValue)]);
+    .domain([1, max(randomData, yValue)]);
 
   const lineGenerator = line()
     .x((d) => xScale(xValue(d)))
     .y((d) => yScale(yValue(d)));
+
+  const yAxisTicks = yScale.ticks()
+    .filter(tick => Number.isInteger(tick));
 
   return (
     <div className="line-chart-container">
@@ -64,7 +66,7 @@ const LineChart = ({ workLocation, seekLocations }) => {
       </div>
       <svg className="line-chart" width={width} height={height}>
         <g transform={`translate(${margin.left},${margin.top})`}>
-          {yScale.ticks().map((tickValue) => (
+          {yAxisTicks.map((tickValue) => (
             <g key={tickValue} transform={`translate(0, ${yScale(tickValue)})`}>
               {/* <line x1={0} y1={0} x2={innerWidth} y2={0} stroke="white" /> */}
               <text
