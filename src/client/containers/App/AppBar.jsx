@@ -49,7 +49,7 @@ const PrimarySearchAppBar = () => {
         <div className={classes.grow} />
         <div>
           <Typography variant="subtitle1" noWrap>
-            <a href="https://github.com/" style={{ textDecoration: 'none', color: '#1E1E2F' }}>View on GitHub</a>
+            <a href="https://github.com/niranjan-ramesh/Vancouver-Commutes" style={{ textDecoration: 'none', color: '#1E1E2F' }}>View on GitHub</a>
           </Typography>
         </div>
       </Toolbar>
