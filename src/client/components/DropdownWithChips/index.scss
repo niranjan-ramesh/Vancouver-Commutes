@@ -1,0 +1,22 @@
+.ChipsAndInputHolder {
+  .ChipContainer {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .DropdownInputContainer {
+    position: relative;
+    .DropDown {
+      width: 100%;
+      border: 1px solid #ccc;
+      background: #fff;
+      color: #53565a;
+      max-height: 15.625rem;
+      overflow: auto;
+      position: absolute;
+      z-index: 10000;
+      border-radius: 0.1rem;
+      margin: -10px 0 0 0px;
+    }
+  }
+}

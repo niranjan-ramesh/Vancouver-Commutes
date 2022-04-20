@@ -1,0 +1,52 @@
+.options-list {
+    width: 12rem;
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 2px 2px rgba(196, 196, 196, 0.5);
+    
+    .options-header {
+        font-size: 14px;
+        height: 2.2rem;
+        padding: 0.4rem 0.6rem;
+        outline: none;
+        border: 0;
+        border-radius: 0;
+        text-align: left;
+        background: #E8EFF5;
+        color: #1B6C92;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+    }
+    .options-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        height: 2.2rem;
+        padding: 0.4rem 0.6rem;
+        outline: none;
+        border: 0;
+        border-radius: 0;
+        text-align: left;
+        color: #707479;
+        cursor: pointer;
+        background: #FAFAFA;
+        border-bottom: 1px solid #D6D7D8;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+
+        .redirect-icon {
+            display: none;
+        }
+    }
+    .options-item:hover {
+        .redirect-icon {
+            font-size: small;
+            display: block;
+        }
+    }
+}

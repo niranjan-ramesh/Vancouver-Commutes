@@ -1,0 +1,108 @@
+.charts-container {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    position: absolute;
+
+    .chart-with-filter-menu {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        .map-helper {
+            display: flex;
+            justify-content: space-between;
+            .location-indicator {
+                display: none;
+            }
+            .colour-hue {
+                display: flex;
+                .colour-section {
+                    .span {
+                        margin-right: 2rem;
+                    }
+                    margin: 1rem;
+                }
+                .colour-info {
+                    display: flex;
+                    flex-flow: row;
+                    align-items: center;
+
+                    span {
+                        color: white;
+                    }
+                    .colour-1 {
+                        width: 4.25rem;
+                        border: 10px solid #CFF7FC;
+                    }
+                    .colour-2 {
+                        width: 4.25rem;
+                        border: 10px solid #87EAF7;
+                    }
+                    .colour-3 {
+                        width: 4.25rem;
+                        border: 10px solid #3FDDF3;
+                    }
+                    .colour-4 {
+                        width: 4.25rem;
+                        border: 10px solid #0EBFD8;
+                    }
+                    .colour-5 {
+                        width: 4.25rem;
+                        border: 10px solid #098090;
+                    }
+                    .colour-6 {
+                        width: 4.25rem;
+                        border: 10px solid #D34;
+                    }
+                }
+            }
+        }
+        .filter-menu {
+            background: #27293D;
+            padding: 1rem 1.5rem;
+            margin: 1rem;
+            border-radius: 0.5rem;
+
+            .title {
+                font-size: 1.5em;
+                color: #FFFFFF;
+            }
+            .filter-menu-container {
+                display: flex;
+                justify-content: space-between;
+                max-width: 700px;
+
+                .custom-select-container {
+                    width: 300px;
+                    .custom-label {
+                        color: #FFFFFF;
+                    }
+                }
+                .ChipsAndInputHolder {
+                    width: 300px;
+                    .custom-label {
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+    .chart {
+        display: inline-block;
+        background: #27293D;
+        padding: 1rem 1rem;
+        margin: 1rem;
+        margin-left: 0;
+        border-radius: 0.5rem;
+
+        #map {
+            height: 450px !important;
+            min-width: 700px;
+        }
+
+        > div {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

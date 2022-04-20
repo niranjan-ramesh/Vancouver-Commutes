@@ -1,0 +1,51 @@
+.bar-chart-container {
+  .bar-chart-heading {
+    display: flex;
+    flex-flow: column;
+    .title {
+      font-size: 1.5em;
+      color: #FFFFFF;
+      margin: .5rem 0;
+    }
+    .description {
+      font-size: .9em;
+      color: #FFFFFF;
+      margin: .5rem 0;
+    }
+    .bedrooms-control {
+      display: flex;
+      flex-flow: column;
+      margin: 0.6rem 0;
+
+      .title {
+        font-size: .9em;
+      }
+      .bedrooms-buttons {
+        display: flex;
+
+        button {
+          color: #FFFFFF;
+          padding: 0.5rem;
+          border: 1px solid #515563;
+          background: #515563;
+          border-radius: 0.5rem;
+          margin: 0.5rem 0.5rem 0.5rem 0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .bar-svg {
+    rect {
+      fill: #F8BF04;
+    }
+    line {
+      stroke: #c0c0be;
+    }
+    text {
+      fill: #c0c0be;
+    }
+  }
+
+}

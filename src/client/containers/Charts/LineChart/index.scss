@@ -1,0 +1,65 @@
+.line-chart-container {
+  .line-chart-heading {
+    display: flex;
+    flex-flow: column;
+    .title {
+      font-size: 1.5em;
+      color: #FFFFFF;
+      margin: .5rem 0rem;
+    }
+    .description {
+      font-size: .9em;
+      color: #FFFFFF;
+      margin: .5rem 0rem;
+    }
+  }
+
+  .line-chart {
+    path {
+      fill: none;
+      stroke: red;
+      stroke-width: 2px;
+    }
+    .marker-line {
+      stroke: red;
+      stroke-width: 1px;
+    }
+    text {
+      font-size: 1em;
+    }
+    .domain {
+      display: none;
+    }
+    .tick line {
+      stroke: #bbbbbb;
+    }
+    .tick text {
+      fill: #565656;
+      font-size: 14px;
+    }
+  }
+
+  .colour-hue {
+    max-width: 900px;
+    display: flex;
+    flex-flow: wrap;
+
+    .colour-section {
+      margin: 0 1rem;
+    }
+
+    .colour-info {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+
+      span {
+        color: white;
+      }
+
+      .colour {
+        margin: 0.3rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.custom-input-container {
+    width: 100%;   
+    color: #53565a; 
+    margin: 0.5rem 0;
+    position: relative;  
+    
+    .custom-label-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .custom-label {
+            font-size: 0.9rem;
+            margin: 0.2rem 0;        
+        }
+    }
+    .custom-input {
+        width: 100%;    
+        border: 1px solid #ccc;
+        outline: none;
+        padding: 0.8rem 0.6rem;
+        box-sizing: border-box;
+        margin: 0.2rem 0;
+        resize: none;
+        &:disabled {
+            background: #D6D7D8;
+        }
+    }    
+    .custom-error {
+        font-size: 0.8rem;
+        margin: 0.2rem 0;   
+        color: #e10c32;
+    }
+}

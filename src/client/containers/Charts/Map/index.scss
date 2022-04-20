@@ -1,0 +1,89 @@
+.map-container {
+  width: 100%;
+  .map-heading {
+    display: flex;
+    flex-flow: column;
+    .title {
+      font-size: 1.5em;
+      color: #FFFFFF;
+      margin: .5rem 0;
+    }
+    .description {
+      font-size: .9em;
+      color: #FFFFFF;
+      margin: .5rem 0;
+    }
+    .map-control {
+      display: flex;
+      flex-flow: column;
+      margin: 0.6rem 0;
+
+      .title {
+        font-size: .9em;
+      }
+      .map-buttons {
+        :hover {
+          border-color: white;
+        }
+        display: flex;
+        svg {
+          fill: white;
+        }
+        span {
+          margin-left:10px;
+        }
+        button {
+          color: #FFFFFF;
+          padding: 0.5rem;
+          border: 1px solid #515563;
+          background: #515563;
+          border-radius: 0.5rem;
+          margin: 0.5rem 0.5rem 0.5rem 0;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+        }
+        .button-active {
+          background-color: white;
+          color: #1e1e2f;
+          svg {
+            fill: #1e1e2f
+          }
+        }
+        .button-inactive {
+          svg {
+            fill: white
+          }
+        }
+      }
+    }
+  }
+
+  .location-indicator {
+    span {
+      color: white;
+    }
+  }
+
+  .map-svg {
+    width: 100%;
+    min-height: 500px;
+    min-width: 700px;
+    .marks {
+      path {
+        cursor: pointer;
+        fill: #137b80;
+        stroke: #c0c0be;
+      }
+      .work-path {
+        stroke: #ffffff;
+        stroke-width: 2;
+      }
+      .seek-path {
+        opacity: 0.8;
+        stroke: #ffffff;
+        stroke-width: 2;
+      }
+    }
+  }
+}

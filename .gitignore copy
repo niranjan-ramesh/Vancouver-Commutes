@@ -1,0 +1,19 @@
+### VS Code ###
+.vscode/
+
+### WebStorm ###
+.idea/
+
+**/.rdb
+.gitignore
+
+### MAC ###
+**/.DS_Store
+
+### Other Files & Folders ###
+node_modules
+dist
+yarn-error.log
+coverage/
+
+package-lock.json
