@@ -41,13 +41,11 @@ const Charts = ({
               getText={handleSearch}
               text={locationSearch}
               placeholder="Choose Upto 4 Locations"
-              label="Selected Locations"
+              label="Prefered residence"
               tooltipText="Add those locations you are interested in"
             />
           </div>
         </div>
-        <div style={{display: 'flex'}}>
-        <div style={{width: '45rem'}}>
           <div className="chart">
             <Map />
             <div className="map-helper">
@@ -74,21 +72,25 @@ const Charts = ({
               </div>
             </div>
           </div>
-        </div>
         <div className="chart">
           <BarChart />
         </div>
-        </div>
       </div>
-        <div className="chart line-chart">
-          <LineChart />
+      <div className="chart">
+        <LineChart />
+      </div>
+      <div className="chart box-plot-container">
+        <div style={{display: 'grid'}}>
+          <span className="title">Housing Prices</span>
+          <span className="description">Find how the prices of houses are distributed in each region</span>
         </div>
         <div style={{display: 'flex', justifyContent: 'center'}}>
-        <div className="chart box-chart">
-          <BoxChart/>
-        </div>
+          <div className="chart box-chart">
+            <BoxChart/>
+          </div>
         </div>
       </div>
+    </div>
   );
 };
 

@@ -23,13 +23,14 @@ const mapParams = {
   closePopupOnClick: false,
 };
 
-const LeafletMapView = ({ geojson, handleLocationClick, style }) => {
+const LeafletMapView = ({ geojson, handleLocationClick, style, mode, workLocation }) => {
   const mapRef = useRef(null);
-
+  console.log(workLocation);
   const GeoJson = L.geoJson(geojson, {
     onEachFeature: (feature, layer) => {
       layer.on('mouseover', () => {
-        layer.bindPopup(feature.properties.name).openPopup();
+        let location = feature.properties.name;
+        layer.bindPopup(location + " : " +feature.properties[mode] + " mins").openPopup();
       });
       layer.on('click', () => {
         handleLocationClick(feature.properties.name);

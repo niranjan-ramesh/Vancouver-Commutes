@@ -4,6 +4,7 @@ import Data from 'constants/boxplots.json';
 
 const BoxChart = ({ seekLocations }) => {
 
+  if (seekLocations.length === 0) return <></>;
   const filteredData = Data.filter((item) => seekLocations.includes(item.district));
   const seriesData = filteredData.map((item) => ({
     x: item.district,
@@ -16,7 +17,7 @@ const BoxChart = ({ seekLocations }) => {
       data: seriesData
     }
   ]);
-  
+
   useEffect(() => {
     console.log(seekLocations)
     const filteredData = Data.filter((item) => seekLocations.includes(item.district));
@@ -38,14 +39,14 @@ const BoxChart = ({ seekLocations }) => {
       height: 350
     },
     title: {
-      text: 'Basic BoxPlot Chart',
+      text: '',
       align: 'left'
     },
     plotOptions: {
       boxPlot: {
         colors: {
-          upper: '#5C4742',
-          lower: '#A5978B'
+          upper: '#FF9F0A',
+          lower: '#FFD799'
         }
       }
     }

@@ -39,7 +39,7 @@ const LeafletMap = ({ workLocation, seekLocations, setSeekLocations }) => {
       );
     }
   };
-
+  console.log(workLocation);
   return (
     <div className="map-container">
       <div className="map-heading">
@@ -74,6 +74,8 @@ const LeafletMap = ({ workLocation, seekLocations, setSeekLocations }) => {
         geojson={Vancouver[workLocation]}
         handleLocationClick={handleLocationClick}
         style={style}
+        mode={transportation}
+        workLocation={workLocation}
       />
     </div>
   );

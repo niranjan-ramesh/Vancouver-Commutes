@@ -31,10 +31,10 @@ const LineChart = ({ workLocation, seekLocations }) => {
     setLocationColours(seekLocations.map((item, i) => ({ name: item, color: getColor(i) })));
   }, [seekLocations]);
 
-  const width = window.innerWidth;
-  const height = window.innerHeight - 50;
-  // const width = 900;
-  // const height = 600;
+  // const width = window.innerWidth - 80;
+  // const height = window.innerHeight - 100;
+  const width = 1279;
+  const height = 450;
 
   const innerWidth = width - margin.left - margin.right;
   const innerHeight = height - margin.top - margin.bottom;
@@ -49,7 +49,7 @@ const LineChart = ({ workLocation, seekLocations }) => {
 
   const yScale = scaleLinear()
     .range([innerHeight, 0])
-    .domain([1, max(randomData, yValue)]);
+    .domain([0, max(randomData, yValue)]);
 
   const lineGenerator = line()
     .x((d) => xScale(xValue(d)))
@@ -66,9 +66,12 @@ const LineChart = ({ workLocation, seekLocations }) => {
       </div>
       <svg className="line-chart" width={width} height={height}>
         <g transform={`translate(${margin.left},${margin.top})`}>
-          {yAxisTicks.map((tickValue) => (
+          <line x1={0} y1={1} x2={0} y2={innerHeight} stroke="white" />
+          {/* <line x1={0} y1={0} x2={innerWidth} y2={0} stroke="white" /> */}
+          <text className="line-chart-label" x={-210} y={-25}>No of buses</text>
+          {yAxisTicks.map((tickValue, i) => (
             <g key={tickValue} transform={`translate(0, ${yScale(tickValue)})`}>
-              {/* <line x1={0} y1={0} x2={innerWidth} y2={0} stroke="white" /> */}
+              {i === 0 ? (<line x1={0} y1={0} x2={innerWidth} y2={0} stroke="white" />) : (<></>)/*  */}
               <text
                 dy=".3em"
                 style={{ textAnchor: 'end' }}
@@ -86,7 +89,7 @@ const LineChart = ({ workLocation, seekLocations }) => {
             const color = locationColour ? locationColour.color : '';
             return <path key={destination} style={{ stroke: color }} d={lineGenerator(frequency)} transform={`translate(${xScale.bandwidth() / 2}, 0)`} />;
           })}
-
+          {/* <line x1={0} y1={1} y2={1} x2={innerWidth} /> */}
           {xScale.domain().map((tickValue) => (
             <g key={tickValue} transform={`translate(${xScale(tickValue) + xScale.bandwidth() / 2}, 0)`}>
               {/* <line x1={0} y1={0} x2={0} y2={height} stroke="white" /> */}

@@ -1,4 +1,41 @@
 .bar-chart-container {
+  .bar-chart-content {
+    display: flex;
+    .line-chart-label {
+      span {
+        width: 0.3rem
+      }
+      display: flex;
+      align-items: center;
+      color: #FFFFFF;
+      overflow-wrap: anywhere;
+      width: 0.5rem;
+      margin-right: 1rem
+    }
+
+    .bar-svg {
+      .line-chart-label {
+        transform: rotate(270deg);
+        fill: #FFFFFF;
+      }
+      .bar-element {
+        rect {
+          fill: #F8BF04;
+        }
+        line {
+          stroke: #c0c0be;
+        }
+        text {
+          visibility: hidden;
+          fill: #c0c0be;
+        }
+        rect:hover + text {
+          visibility: visible;
+        }
+      }
+    }
+  }
+  padding-left: 1rem;
   .bar-chart-heading {
     display: flex;
     flex-flow: column;
@@ -23,6 +60,10 @@
       .bedrooms-buttons {
         display: flex;
 
+        span {
+          margin-left:10px;
+        }
+
         button {
           color: #FFFFFF;
           padding: 0.5rem;
@@ -31,20 +72,24 @@
           border-radius: 0.5rem;
           margin: 0.5rem 0.5rem 0.5rem 0;
           cursor: pointer;
+          display: flex;
+          align-items: center;
         }
-      }
-    }
-  }
 
-  .bar-svg {
-    rect {
-      fill: #F8BF04;
-    }
-    line {
-      stroke: #c0c0be;
-    }
-    text {
-      fill: #c0c0be;
+        .button-active {
+          background-color: white;
+          color: #1e1e2f;
+          svg {
+            fill: #1e1e2f
+          }
+        }
+        .button-inactive {
+          svg {
+            fill: white
+          }
+        }
+      
+      }
     }
   }
 
