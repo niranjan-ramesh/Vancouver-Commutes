@@ -4,11 +4,19 @@ const compression = require('compression');
 const helmet = require('helmet');
 const path = require('path');
 
+var fs = require('fs');
+var http = require('http');
+var https = require('https');
+var privateKey  = fs.readFileSync('/etc/letsencrypt/live/vancouver-commute.tech/privkey.pem', 'utf8');
+var certificate = fs.readFileSync('/etc/letsencrypt/live/vancouver-commute.tech/cert.pem', 'utf8');
+var credentials = {key: privateKey, cert: certificate};
+
 const routes = require('./routes');
 const logger = require('./config/winstonLogger');
 const apiLogger = require('./config/expressWinstonLogger');
 
-const app = express();
+// const app = ;
+const app = https.createServer(credentials, express());
 const port = 443;
 
 app.use(helmet());
