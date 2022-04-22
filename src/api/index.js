@@ -15,8 +15,7 @@ const routes = require('./routes');
 const logger = require('./config/winstonLogger');
 const apiLogger = require('./config/expressWinstonLogger');
 
-// const app = ;
-const app = https.createServer(credentials, express());
+const app = express();
 const port = 443;
 
 app.use(helmet());
@@ -48,7 +47,8 @@ app.use((err, req, res, next) => {
   }
 });
 
-app.listen(port, (error) => {
+httpsServer = https.createServer(credentials, app);
+httpsServer.listen(port, (error) => {
   if (error) {
     logger.error(error);
   } else {
