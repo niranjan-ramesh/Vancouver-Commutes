@@ -38,25 +38,6 @@
     "overall-units": "11,827"
   },
   {
-    "district": "Downtown Eastside",
-    "1br-average": 1297,
-    "1br-median": 1275,
-    "1br-vacancy_rate": 0.9,
-    "1br-units": "3,517",
-    "2br-average": 1765,
-    "2br-median": 1675,
-    "2br-vacancy_rate": 0.6,
-    "2br-units": 933,
-    "3br-average": 2341,
-    "3br-median": 2250,
-    "3br-vacancy_rate": 0,
-    "3br-units": 46,
-    "overall-average": 1392,
-    "overall-median": 1325,
-    "overall-vacancy_rate": 0.8,
-    "overall-units": "5,521"
-  },
-  {
     "district": "Dunbar Southlands",
     "1br-average": 1566,
     "1br-median": 1525,

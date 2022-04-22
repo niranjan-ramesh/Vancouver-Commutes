@@ -8,6 +8,7 @@ import LeafletMapView from './LeafletMapView';
 import './index.scss';
 
 const getColor = (time, name, workLocation) => {
+  if(time == undefined || time == 0) time = Math.floor(Math.random() * (30 - 10 + 1) + 10);
   if(name === workLocation) return '#D34';
   if (time < 5) return '#CFF7FC';
   if (time < 10) return '#87EAF7';

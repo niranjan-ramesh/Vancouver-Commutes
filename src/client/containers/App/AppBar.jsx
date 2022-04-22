@@ -42,7 +42,7 @@ const PrimarySearchAppBar = () => {
   return (
     <AppBar position="static" className={classes.appBar}>
       <Toolbar>
-        <Typography variant="h5" noWrap>
+        <Typography style={{ fontWeight: 'bold' }} variant="h5" noWrap>
           VANCOUVER ZONES - DASHBOARD
         </Typography>
         <div className={classes.grow} />

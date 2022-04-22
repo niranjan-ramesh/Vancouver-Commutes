@@ -3,7 +3,7 @@ import { SET_HOVER_LOCATION, SET_WORK_LOCATION, SET_SEEK_LOCATIONS } from 'const
 const defaultState = {
   hoverLocation: 'Move the cursor over the map',
   workLocation: 'Grandview-Woodland',
-  seekLocations: ['Dunbar Southlands', 'Downtown Eastside'],
+  seekLocations: ['Dunbar Southlands', 'Downtown'],
 };
 
 export default function healthReducer(state = defaultState, action) {

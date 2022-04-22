@@ -34,6 +34,13 @@ const BoxChart = ({ seekLocations }) => {
   }, [seekLocations]);
     
   const options= {
+    yaxis: {
+      decimalsInFloat: 0,
+      title: {
+        text: 'Selling Price of house in Million CAD',
+        rotate: -90
+      }
+    },
     chart: {
       type: 'boxPlot',
       height: 350

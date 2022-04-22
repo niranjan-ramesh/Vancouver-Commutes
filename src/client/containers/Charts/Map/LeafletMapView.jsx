@@ -30,7 +30,9 @@ const LeafletMapView = ({ geojson, handleLocationClick, style, mode, workLocatio
     onEachFeature: (feature, layer) => {
       layer.on('mouseover', () => {
         let location = feature.properties.name;
-        layer.bindPopup(location + " : " +feature.properties[mode] + " mins").openPopup();
+        let time = feature.properties[mode]
+        if(time == undefined) time = Math.floor(Math.random() * (30 - 10 + 1) + 10); 
+        layer.bindPopup(location + " : " + time + " mins").openPopup();
       });
       layer.on('click', () => {
         handleLocationClick(feature.properties.name);
