@@ -10,7 +10,7 @@ import SampleData from 'constants/bar-graph.json';
 
 const BarChart = ({ seekLocations }) => {
   if (seekLocations.length === 0) return <></>;
-
+  seekLocations = seekLocations.sort();
   const [bedrooms, setBedrooms] = useState('overall-average');
   const data = SampleData.filter((item) => seekLocations.includes(item.district));
 

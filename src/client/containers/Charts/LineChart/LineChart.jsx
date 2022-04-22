@@ -24,7 +24,7 @@ const getColor = (i) => {
 
 const LineChart = ({ workLocation, seekLocations }) => {
   if (seekLocations.length === 0) return <></>;
-
+  seekLocations = seekLocations.sort();
   const [locationColours, setLocationColours] = useState([]);
   useEffect(() => {
     console.log(seekLocations)
