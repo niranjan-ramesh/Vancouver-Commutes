@@ -9,7 +9,7 @@ const logger = require('./config/winstonLogger');
 const apiLogger = require('./config/expressWinstonLogger');
 
 const app = express();
-const port = 80;
+const port = 443;
 
 app.use(helmet());
 app.use(compression());
