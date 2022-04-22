@@ -1,6 +1,6 @@
 [
   {
-    "district": "Arbutus Ridge",
+    "district": "Arbutus-Ridge",
     "1br-average": 1600,
     "1br-median": 1600,
     "1br-vacancy_rate": 0.9,
@@ -38,7 +38,7 @@
     "overall-units": "11,827"
   },
   {
-    "district": "Dunbar Southlands",
+    "district": "Dunbar-Southlands",
     "1br-average": 1566,
     "1br-median": 1525,
     "1br-vacancy_rate": 0.8,

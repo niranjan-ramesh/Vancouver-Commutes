@@ -1,6 +1,6 @@
 [
   {
-    "district": "Arbutus Ridge",
+    "district": "Arbutus-Ridge",
     "min": 0.23,
     "q1": 2.07,
     "q2": 2.62,
@@ -16,7 +16,7 @@
     "max": 9.88
   },
   {
-    "district": "Dunbar Southlands",
+    "district": "Dunbar-Southlands",
     "min": 0.38,
     "q1": 2.23,
     "q2": 2.66,

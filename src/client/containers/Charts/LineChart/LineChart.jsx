@@ -41,6 +41,7 @@ const LineChart = ({ workLocation, seekLocations }) => {
 
   const dataArray = SampleData[workLocation]
     .filter((item) => seekLocations.includes(item.destination));
+  console.log
   const randomData = dataArray[0].frequency;
 
   const xScale = scaleBand()

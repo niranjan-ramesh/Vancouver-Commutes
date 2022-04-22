@@ -1,5 +1,5 @@
 {
-    "Dunbar Southlands": [
+    "Dunbar-Southlands": [
         {
             "destination": "Hastings-Sunrise",
             "frequency": [
@@ -1531,7 +1531,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -1788,7 +1788,7 @@
     ],
     "Hastings-Sunrise": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -3318,7 +3318,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -3575,7 +3575,7 @@
     ],
     "Mount Pleasant": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -5105,7 +5105,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -5362,7 +5362,7 @@
     ],
     "Fairview": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -6892,7 +6892,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -7149,7 +7149,7 @@
     ],
     "Downtown": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -8679,7 +8679,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -8936,7 +8936,7 @@
     ],
     "West End": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -10466,7 +10466,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -10723,7 +10723,7 @@
     ],
     "Killarney": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -12253,7 +12253,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -12510,7 +12510,7 @@
     ],
     "Kerrisdale": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -14040,7 +14040,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -14297,7 +14297,7 @@
     ],
     "Sunset": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -15827,7 +15827,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -16084,7 +16084,7 @@
     ],
     "Marpole": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -17614,7 +17614,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -17871,7 +17871,7 @@
     ],
     "Kitsilano": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -19401,7 +19401,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -19658,7 +19658,7 @@
     ],
     "Victoria-Fraserview": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -21188,7 +21188,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -21445,7 +21445,7 @@
     ],
     "West Point Grey": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -22975,7 +22975,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -23232,7 +23232,7 @@
     ],
     "Kensington-Cedar Cottage": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -24762,7 +24762,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -25019,7 +25019,7 @@
     ],
     "Renfrew-Collingwood": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -26549,7 +26549,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -26806,7 +26806,7 @@
     ],
     "Oakridge": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -28336,7 +28336,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -28593,7 +28593,7 @@
     ],
     "Riley Park": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -30123,7 +30123,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -30380,7 +30380,7 @@
     ],
     "Shaughnessy": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -31910,7 +31910,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -32167,7 +32167,7 @@
     ],
     "Grandview-Woodland": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -33697,7 +33697,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -33952,9 +33952,9 @@
             ]
         }
     ],
-    "Arbutus Ridge": [
+    "Arbutus-Ridge": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -35741,7 +35741,7 @@
     ],
     "South Cambie": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -37356,7 +37356,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
@@ -37528,7 +37528,7 @@
     ],
     "Strathcona": [
         {
-            "destination": "Dunbar Southlands",
+            "destination": "Dunbar-Southlands",
             "frequency": [
                 {
                     "time": "5AM",
@@ -39143,7 +39143,7 @@
             ]
         },
         {
-            "destination": "Arbutus Ridge",
+            "destination": "Arbutus-Ridge",
             "frequency": [
                 {
                     "time": "5AM",
