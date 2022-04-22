@@ -6,7 +6,7 @@ import InfoIcon from '@material-ui/icons/Info';
 export default function InfoTooltip({ title }) {
   return (
     <Tooltip title={title} placement="bottom-end" arrow>
-      <InfoIcon className="icon" fontSize="small" htmlColor="#FFFFFF" />
+      <InfoIcon className="icon" fontSize="small" htmlColor="#FFFFFF40" />
     </Tooltip>
   );
 }

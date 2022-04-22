@@ -62,11 +62,11 @@ const Charts = ({
                     <div className="colour-5" />
                     <div className="colour-6" />          
                   </div>
-                  <span style={{color: 'white', marginRight: '5rem'}}>0</span>
-                  <span style={{color: 'white', marginRight: '5rem'}}>5</span>
-                  <span style={{color: 'white', marginRight: '4.25rem'}}>10</span>
-                  <span style={{color: 'white', marginRight: '4.25rem'}}>20</span>
-                  <span style={{color: 'white', marginRight: '5rem'}}>35+</span>
+                  <span style={{color: 'white', marginRight: '3rem'}}>0 min</span>
+                  <span style={{color: 'white', marginRight: '2.5rem'}}>5 mins</span>
+                  <span style={{color: 'white', marginRight: '2.20rem'}}>10 mins</span>
+                  <span style={{color: 'white', marginRight: '2.15rem'}}>20 mins</span>
+                  <span style={{color: 'white', marginRight: '11rem'}}>35+ mins</span>
                   <span style={{color: 'white'}}>Current work location</span>
                 </div>
               </div>
@@ -82,7 +82,7 @@ const Charts = ({
       <div className="chart box-plot-container">
         <div style={{display: 'grid'}}>
           <span className="title">Housing Prices</span>
-          <span className="description">Find how the prices of houses are distributed in each region</span>
+          <span className="description">Find the selling price distribution of houses in selected regions</span>
         </div>
         <div style={{display: 'flex', justifyContent: 'center'}}>
           <div className="chart box-chart">

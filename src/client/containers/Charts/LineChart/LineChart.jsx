@@ -49,7 +49,7 @@ const LineChart = ({ workLocation, seekLocations }) => {
 
   const yScale = scaleLinear()
     .range([innerHeight, 0])
-    .domain([0, max(randomData, yValue)]);
+    .domain([0, 7]);
 
   const lineGenerator = line()
     .x((d) => xScale(xValue(d)))
@@ -62,7 +62,7 @@ const LineChart = ({ workLocation, seekLocations }) => {
     <div className="line-chart-container">
       <div className="line-chart-heading">
         <span className="title">Transit Frequency</span>
-        <span className="description">Find out the frequency of transit busses for your selected locations</span>
+        <span className="description">Find the frequency of transit options to your workplace</span>
       </div>
       <svg className="line-chart" width={width} height={height}>
         <g transform={`translate(${margin.left},${margin.top})`}>

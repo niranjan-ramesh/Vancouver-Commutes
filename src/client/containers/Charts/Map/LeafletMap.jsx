@@ -45,7 +45,7 @@ const LeafletMap = ({ workLocation, seekLocations, setSeekLocations }) => {
     <div className="map-container">
       <div className="map-heading">
         <span className="title">Commutes</span>
-        <span className="description">Find out the average rental pricing of your selected locations</span>
+        <span className="description">Find the average commute time to your workplace</span>
         <div className="map-control">
           <span className="title">TIME TO REACH</span>
           <div className="map-buttons">
